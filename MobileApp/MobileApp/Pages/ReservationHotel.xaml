@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Pages.ReservationHotel">
+    <ContentPage.Content>
+        <Grid >            
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="ФИО: " FontSize="20"/>
+                    <Entry x:Name="EntryAuthot" FontSize="20" Placeholder="Введите ваше ФИО(полностью)" Text="{Binding CurrentReservationHotel.Author}"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="20" Text="Телефон: "/>
+                    <Entry x:Name="EntryPhone"  FontSize="20" Placeholder="Введите ваш номер телефона" Text="{Binding CurrentReservationHotel.Phone}"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label FontSize="20" Text="Комментарий: "/>
+                    <Entry x:Name="EntryDescr"  FontSize="20" Placeholder="Введите пожелания" Text="{Binding CurrentReservationHotel.Description}"></Entry>
+                </StackLayout>
+                <Button Text="Оставить заявку" Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </Grid>
+            
+        
+    </ContentPage.Content>
+</ContentPage>
