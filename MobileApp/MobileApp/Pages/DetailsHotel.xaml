@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileApp.Pages.DetailsHotel">
+             x:Class="MobileApp.Pages.DetailsHotel"
+             Background="#ABCDEF">
     <ContentPage.Content>
         <ScrollView>
             
@@ -13,7 +14,7 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" BindingContext="{Binding CurrentHotel}">
                 <StackLayout>
-                    <Label Margin="5" FontSize="30" HorizontalOptions="Center" Text="{Binding Name}"></Label>
+                    <Label Margin="5" FontSize="30" HorizontalOptions="Center" Text="{Binding Name}" FontAttributes="Bold"></Label>
                     <Image HeightRequest="250" WidthRequest="100" Source="{Binding Photo}" HorizontalOptions="FillAndExpand"></Image>
                     <Label Margin="5" FontSize="20" HorizontalOptions="Center" Text="{Binding Description}"></Label>
                     <Button Text="Забронировать" Clicked="Button_Clicked"></Button>

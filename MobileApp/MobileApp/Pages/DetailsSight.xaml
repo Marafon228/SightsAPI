@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileApp.Pages.DetailsSight">
+             x:Class="MobileApp.Pages.DetailsSight"
+             Background="#ABCDEF">
     <ContentPage.Content>
         <ScrollView>
             
         <Grid BindingContext="{Binding CurrentSight}">
             <StackLayout>
-                <Label Margin="5" FontSize="30" HorizontalOptions="Center" Text="{Binding Name}"></Label>
+                    <Label Margin="5" FontSize="30" HorizontalOptions="Center" Text="{Binding Name}" FontAttributes="Bold"></Label>
                 <Image HeightRequest="250" Source="{Binding Photo}" HorizontalOptions="FillAndExpand"></Image>
                 <Label Margin="5" FontSize="25" HorizontalOptions="FillAndExpand" Text="{Binding Description}"></Label>
             </StackLayout>

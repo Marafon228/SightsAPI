@@ -33,7 +33,7 @@ namespace MobileApp.Pages
         private void UpdateComments()
         {
             var client = new WebClient();
-            var response = client.DownloadString("http://192.168.0.101:56064/api/HotelComments/getHotelComments?hotelId=" + CurrentHotel.Id);
+            var response = client.DownloadString("http://192.168.0.100:56064/api/HotelComments/getHotelComments?hotelId=" + CurrentHotel.Id);
             ListViewComments.ItemsSource = JsonConvert.DeserializeObject<List<HotelComment>>(response);
         }
 
@@ -41,7 +41,7 @@ namespace MobileApp.Pages
         {
             var client = new WebClient();
             client.Headers.Add(HttpRequestHeader.ContentType, "application/json");
-            var result = client.UploadString("http://192.168.0.101:56064/api/HotelComments/PostHotelComments", JsonConvert.SerializeObject(CurrentComment));
+            var result = client.UploadString("http://192.168.0.100:56064/api/HotelComments/PostHotelComments", JsonConvert.SerializeObject(CurrentComment));
             UpdateComments();
         }
 

@@ -19,7 +19,7 @@ namespace MobileApp.Pages
         {
             InitializeComponent();
             var client = new WebClient();
-            var response = client.DownloadString("http://192.168.0.101:56064/api/Sights/Sights");
+            var response = client.DownloadString("http://192.168.0.100:56064/api/Sights/Sights");
             ListViewSights.ItemsSource = JsonConvert.DeserializeObject<List<Sight>>(response);
         }
 

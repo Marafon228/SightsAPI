@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileApp.Pages.SightsView">
+             x:Class="MobileApp.Pages.SightsView"
+             Background="#ABCDEF">
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="ListViewSights" ItemSelected="ListViewSights_ItemSelected" HasUnevenRows="True">
@@ -9,7 +10,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-                                <Label Margin="5" FontSize="30" HorizontalOptions="Center" Text="{Binding Name}"></Label>
+                                <Label Margin="5" FontSize="30" HorizontalOptions="Center" Text="{Binding Name}" FontAttributes="Bold"></Label>
                                 <Image HeightRequest="250" Source="{Binding Photo}" HorizontalOptions="FillAndExpand"></Image>
                             </StackLayout>
                         </ViewCell>
