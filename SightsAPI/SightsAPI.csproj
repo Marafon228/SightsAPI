@@ -285,9 +285,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56064</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://192.168.0.101:56064/</IISUrl>
+          <IISUrl>http://localhost:8080/</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://192.168.0.101:56064/</IISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8080/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
